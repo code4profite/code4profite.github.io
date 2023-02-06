@@ -24,7 +24,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Scope.html">Scope</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$$areEquals">$$areEquals</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$$digestOnce">$$digestOnce</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$apply">$apply</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$digest">$digest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$eval">$eval</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$evalAsync">$evalAsync</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Scope.html">Scope</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#_">_</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initWatchVal">initWatchVal</a></span></li>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Scope.html">Scope</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$$areEquals">$$areEquals</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$$digestOnce">$$digestOnce</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$apply">$apply</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$digest">$digest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$eval">$eval</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$evalAsync">$evalAsync</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Scope.html#$watch">$watch</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Scope.html">Scope</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#_">_</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initWatchVal">initWatchVal</a></span></li>
 </nav>
 
 <div id="main">
@@ -520,7 +520,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scope.js.html">scope.js</a>, <a href="scope.js.html#line146">line 146</a>
+        <a href="scope.js.html">scope.js</a>, <a href="scope.js.html#line147">line 147</a>
     </li></ul></dd>
     
 
@@ -581,7 +581,7 @@
             
 
             <td class="description last">
-                
+                <p>expression code to evaluate</p>
                 
             </td>
         </tr>
@@ -731,7 +731,7 @@
 
     
 
-    <h4 class="name" id="$eval"><span class="type-signature"></span>$eval<span class="signature">(expr, *<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    <h4 class="name" id="$eval"><span class="type-signature"></span>$eval<span class="signature">(expr, locals<span class="signature-attributes">opt</span>, locals<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {*}</span></h4>
 
     
 
@@ -774,7 +774,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scope.js.html">scope.js</a>, <a href="scope.js.html#line136">line 136</a>
+        <a href="scope.js.html">scope.js</a>, <a href="scope.js.html#line137">line 137</a>
     </li></ul></dd>
     
 
@@ -845,7 +845,7 @@
             
 
             <td class="description last">
-                
+                <p>expression code to evaluate</p>
                 
             </td>
         </tr>
@@ -854,10 +854,15 @@
 
         <tr>
             
-                <td class="name"><code>*</code></td>
+                <td class="name"><code>locals</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+
+
             
             </td>
 
@@ -876,7 +881,43 @@
             
 
             <td class="description last">
-                <p>locals</p>
+                <p>params that you pass to expression if it is a function</p>
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>locals</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                <p>params that you pass to expression if it is a function</p>
                 
             </td>
         </tr>
@@ -971,7 +1012,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scope.js.html">scope.js</a>, <a href="scope.js.html#line158">line 158</a>
+        <a href="scope.js.html">scope.js</a>, <a href="scope.js.html#line159">line 159</a>
     </li></ul></dd>
     
 
@@ -1032,7 +1073,7 @@
             
 
             <td class="description last">
-                
+                <p>expression code to evaluate</p>
                 
             </td>
         </tr>
@@ -1058,18 +1099,12 @@
 
 </div>
         
-    
-
-    
-        <h3 class="subsection-title">Type Definitions</h3>
-
-        
-                
+            
 <div class="section-method">
 
     
 
-    <h4 class="name" id=".listenerFn"><span class="type-signature"></span>listenerFn<span class="signature">(valueEq)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    <h4 class="name" id="$watch"><span class="type-signature"></span>$watch<span class="signature">(watchFn, listenerFn, valueEq)</span><span class="type-signature"> &rarr; {function}</span></h4>
 
     
 
@@ -1112,7 +1147,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scope.js.html">scope.js</a>, <a href="scope.js.html#line28">line 28</a>
+        <a href="scope.js.html">scope.js</a>, <a href="scope.js.html#line36">line 36</a>
     </li></ul></dd>
     
 
@@ -1152,6 +1187,58 @@
     </thead>
 
     <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>watchFn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <p>function that return scope variable whose change</p>
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listenerFn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <p>function called when watch variable change</p>
+                
+            </td>
+        </tr>
+
     
 
         <tr>
@@ -1206,7 +1293,7 @@
     </dt>
     <dd>
         
-<span class="param-type"><code>*</code></span>
+<span class="param-type"><code>function</code></span>
 
 
     </dd>
@@ -1223,7 +1310,9 @@
 
 
 </div>
-            
+        
+    
+
     
 
     
@@ -1239,7 +1328,7 @@
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.0</a> on Sun Feb 05 2023 12:22:27 GMT+0100 (GMT+01:00) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.0</a> on Sun Feb 05 2023 23:31:46 GMT+0100 (GMT+01:00) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
